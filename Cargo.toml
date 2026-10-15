@@ -21,6 +21,9 @@ members = [
   "pegainfer-kv-cache",
   "pegainfer-kv-offload",
   "pegainfer-kv-store",
+  # ARMv9 CPU backend: vendored KuTACC plus the 920F native-library access.
+  # Kunpeng-only licensing, see pegainfer-kutacc/NOTICE-KUTACC.md.
+  "pegainfer-kutacc",
   # ---- dynamo kvbm (forked from upstream, Apache-2.0) ----
   "kvbm/kvbm-logical",
 ]
@@ -128,6 +131,7 @@ pegainfer-gemma4 = { path = "pegainfer-gemma4" }
 pegainfer-glm52 = { path = "pegainfer-glm52" }
 pegainfer-k3 = { path = "pegainfer-k3" }
 pegainfer-kernels = { path = "pegainfer-kernels" }
+pegainfer-kutacc = { path = "pegainfer-kutacc" }
 pegainfer-kimi-k2 = { path = "pegainfer-kimi-k2" }
 pegainfer-kv-cache = { path = "pegainfer-kv-cache" }
 pegainfer-kv-offload = { path = "pegainfer-kv-offload" }

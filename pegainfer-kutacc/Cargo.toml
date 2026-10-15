@@ -1,0 +1,19 @@
+[package]
+name = "pegainfer-kutacc"
+version = "0.1.0"
+edition = "2024"
+# PegaInfer's own code here is Apache-2.0, but the crate vendors Huawei's
+# KuTACC under a modified MIT license with additional conditions (see
+# LICENSE-KUTACC and NOTICE-KUTACC). The combined work is therefore
+# Kunpeng-only; the SPDX expression names the vendor license explicitly.
+license = "Apache-2.0 AND LicenseRef-KuTACC"
+description = "Vendored Kunpeng KuTACC operators (SVE/SME) for PegaInfer"
+publish = false
+
+[dependencies]
+
+[features]
+default = []
+# Native SHM, RDMA, MoE and PP communication; never enables a CUDA crate.
+comm = []
+sdma = ["comm"]
