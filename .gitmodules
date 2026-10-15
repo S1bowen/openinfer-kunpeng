@@ -10,3 +10,6 @@
 [submodule "pegainfer-kernels/third_party/DeepGEMM"]
 	path = pegainfer-kernels/third_party/DeepGEMM
 	url = https://github.com/pegainfer-project/DeepGEMM
+[submodule "pegainfer-kutacc/csrc/kutacc"]
+	path = pegainfer-kutacc/csrc/kutacc
+	url = https://github.com/MLSysU/kutacc.git
